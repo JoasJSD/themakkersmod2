@@ -1,0 +1,17 @@
+{
+  "block.themakkersmod.block_of_knakworst": "Block of Knakworst",
+  "block.themakkersmod.knakworst_oven": "Knakworst-Ofen",
+  "block.themakkersmod.moos_statue": "Moosstatur",
+
+
+  "item.themakkersmod.bread_with_knakworst": "Knakworstbrot",
+  "item.themakkersmod.eaten_microphone": "Gefressenes Mikrofon",
+  "item.themakkersmod.hot_knakworst": "Heiße Knakworst",
+  "item.themakkersmod.knakworst": "Knakworst",
+  "item.themakkersmod.microphone": "Mikrofon",
+  "item.themakkersmod.music_disc_don": "Schallplatte",
+  "item.themakkersmod.music_disc_don.desc": "Makkers - Don",
+
+
+  "tab.themakkersmod_tab": "Die Makkers Mod Tab"
+}

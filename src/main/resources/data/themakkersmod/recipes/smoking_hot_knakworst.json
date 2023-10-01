@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "misc",
+  "experience": 2,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "themakkersmod:knakworst"
+  },
+  "result": "themakkersmod:hot_knakworst"
+}

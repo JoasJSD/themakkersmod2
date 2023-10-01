@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 2,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "themakkersmod:knakworst"
+  },
+  "result": "themakkersmod:hot_knakworst"
+}

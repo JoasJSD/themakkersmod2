@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0",
+    "1",
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:bread"
+    },
+    "1": {
+      "item": "themakkersmod:hot_knakworst"
+    }
+  },
+  "result": {
+    "item": "themakkersmod:bread_with_knakworst",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "themakkersmod:block_of_knakworst"
+    }
+  },
+  "result": {
+    "item": "themakkersmod:knakworst",
+    "count": 9
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  1",
+    "223",
+    "2  "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:black_wool"
+    },
+    "2": {
+      "item": "minecraft:string"
+    },
+    "3": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "themakkersmod:microphone",
+    "count": 1
+  }
+}
