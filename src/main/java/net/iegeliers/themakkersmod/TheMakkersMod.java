@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.iegeliers.themakkersmod.block.TMMBlocks;
 import net.iegeliers.themakkersmod.item.TMMItems;
 import net.iegeliers.themakkersmod.misc.TMMCreativeModeTabs;
+import net.iegeliers.themakkersmod.sound.TMMSounds;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -32,6 +33,7 @@ public class TheMakkersMod
 
         TMMItems.register(modEventBus);
         TMMBlocks.register(modEventBus);
+        TMMSounds.SOUNDEVENT.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -46,6 +48,8 @@ public class TheMakkersMod
             event.accept(TMMItems.MICROPHONE);
             event.accept(TMMItems.EATEN_MICROPHONE);
             event.accept(TMMItems.CAN_OPENER);
+            event.accept(TMMItems.CAN_OF_KNAKWORST);
+            event.accept(TMMItems.MUSIC_DISC_DON);
             // Blocks
             event.accept(TMMBlocks.BLOCK_OF_KNAKWORST);
         }
