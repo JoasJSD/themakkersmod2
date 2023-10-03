@@ -3,8 +3,14 @@
   "block.themakkersmod.knakworst_oven": "",
   "block.themakkersmod.moos_statue": "",
 
+  "book.themakkersmod.update_book.full_releases.title": "Full Releases",
+  "book.themakkersmod.update_book.root.title": "Update Book",
+  "book.themakkersmod.update_book.update200.title": "The Port Update!",
+
+  "entity.minecraft.villager.themakkersmod.knakworst_butcher": "Knakworst Butcher",
 
   "item.themakkersmod.bread_with_knakworst": "",
+  "item.themakkersmod.can_of_knakworst": "Can of Knakworst",
   "item.themakkersmod.can_opener": "",
   "item.themakkersmod.eaten_microphone": "",
   "item.themakkersmod.hot_knakworst": "",
@@ -12,7 +18,11 @@
   "item.themakkersmod.microphone": "",
   "item.themakkersmod.music_disc_don": "",
   "item.themakkersmod.music_disc_don.desc": "",
+  "item.themakkersmod.update_book": "Update Book",
 
+  "message.themakkersmod.join.end": "version of The Makkers Mod! I hope you'll enjoy!",
+  "message.themakkersmod.join.thanks": "Thank you for playing the ",
+  "message.themakkersmod.join.welcome": "Welcome! ",
 
   "tab.themakkersmod_tab": ""
 }

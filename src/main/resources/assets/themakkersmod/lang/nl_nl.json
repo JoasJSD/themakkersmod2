@@ -1,18 +1,28 @@
 {
-  "block.themakkersmod.block_of_knakworst": "",
-  "block.themakkersmod.knakworst_oven": "",
-  "block.themakkersmod.moos_statue": "",
+  "block.themakkersmod.block_of_knakworst": "Knakworstblok",
+  "block.themakkersmod.knakworst_oven": "Knakworstoven",
+  "block.themakkersmod.moos_statue": "Standbeeld van Moos",
 
+  "book.themakkersmod.update_book.full_releases.title": "Volledige releases",
+  "book.themakkersmod.update_book.root.title": "Updateboek",
+  "book.themakkersmod.update_book.update200.title": "De 'port update'!",
 
-  "item.themakkersmod.bread_with_knakworst": "",
-  "item.themakkersmod.can_opener": "",
-  "item.themakkersmod.eaten_microphone": "",
-  "item.themakkersmod.hot_knakworst": "",
-  "item.themakkersmod.knakworst": "",
-  "item.themakkersmod.microphone": "",
-  "item.themakkersmod.music_disc_don": "",
-  "item.themakkersmod.music_disc_don.desc": "",
+  "entity.minecraft.villager.themakkersmod.knakworst_butcher": "Knakworst slager",
 
+  "item.themakkersmod.bread_with_knakworst": "Bolletje knakworst",
+  "item.themakkersmod.can_of_knakworst": "Blikje knakworst",
+  "item.themakkersmod.can_opener": "Blikopener",
+  "item.themakkersmod.eaten_microphone": "Gegeten microfoon",
+  "item.themakkersmod.hot_knakworst": "Warme knakworst",
+  "item.themakkersmod.knakworst": "Knakworst",
+  "item.themakkersmod.microphone": "Microfoon",
+  "item.themakkersmod.music_disc_don": "Muziekplaat Don",
+  "item.themakkersmod.music_disc_don.desc": "De Makkers - Ohohh Don",
+  "item.themakkersmod.update_book": "Updateboek",
 
-  "tab.themakkersmod_tab": ""
+  "message.themakkersmod.join.end": "van The Makkers Mod! We hopen dat je het leuk vind!",
+  "message.themakkersmod.join.thanks": "Bedankt voor het spelen van versie ",
+  "message.themakkersmod.join.welcome": "Welkom! ",
+
+  "tab.themakkersmod_tab": "De Makkers Mod Tab"
 }
