@@ -29,13 +29,13 @@ public class TMMBlocks{
                     .sound(SoundType.SLIME_BLOCK)));
 
     public static final RegistryObject<Block> KNAKWORST_OVEN = registerBlock("knakworst_oven",
-            () -> new BlockKnakworstOven(BlockBehaviour.Properties.of(Material.STONE).strength(1.0F, 1.5F)
-                    .sound(SoundType.STONE).randomTicks()));
+            () -> new BlockKnakworstOven(BlockBehaviour.Properties.of(Material.STONE).strength(3.0F, 1.5F)
+                    .sound(SoundType.STONE).randomTicks().requiresCorrectToolForDrops()));
 
     // Models
     public static final RegistryObject<Block> MOOS_STATUE = registerBlock("moos_statue",
-            () -> new BlockMoosStatue(BlockBehaviour.Properties.of(Material.STONE).strength(2.0F, 3.0F)
-                    .sound(SoundType.STONE)));
+            () -> new BlockMoosStatue(BlockBehaviour.Properties.of(Material.STONE).strength(3.0F, 3.0F)
+                    .sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
 
     // Block registry object

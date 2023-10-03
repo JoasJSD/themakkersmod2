@@ -49,7 +49,7 @@ apply plugin: 'idea'
 apply plugin: 'org.spongepowered.mixin'
 
 
-version = '2.0.0.PLAYTEST'
+version = '2.0.0'
 group = 'net.iegeliers.themakkersmod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'themakkersmod'
 
@@ -94,7 +94,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'examplemod'
+            property 'forge.enabledGameTestNamespaces', 'themakkersmod'
 
             mods {
                 examplemod {

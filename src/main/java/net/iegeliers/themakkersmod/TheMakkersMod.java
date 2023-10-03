@@ -3,7 +3,7 @@ package net.iegeliers.themakkersmod;
 import com.mojang.logging.LogUtils;
 import net.iegeliers.themakkersmod.block.TMMBlocks;
 import net.iegeliers.themakkersmod.block.custom.entity.TMMBlockEntity;
-import net.iegeliers.themakkersmod.block.custom.entity.TMMMenuType;
+import net.iegeliers.themakkersmod.block.custom.menu.TMMMenuType;
 import net.iegeliers.themakkersmod.block.custom.screen.ScreenKnakworstOven;
 import net.iegeliers.themakkersmod.item.TMMItems;
 import net.iegeliers.themakkersmod.misc.TMMCreativeModeTabs;

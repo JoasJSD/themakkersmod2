@@ -6,7 +6,7 @@
     "east": "themakkersmod:block/knakworst_oven_side",
     "south": "themakkersmod:block/knakworst_oven_side",
     "west": "themakkersmod:block/knakworst_oven_side",
-    "north": "themakkersmod:block/knakworst_oven_front",
+    "north": "themakkersmod:block/knakworst_oven_front_on",
     "particle": "themakkersmod:block/knakworst_oven_bottom"
   },
   "render_type": "solid"

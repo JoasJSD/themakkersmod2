@@ -5,7 +5,7 @@ license="MIT"
 
 [[mods]] #mandatory
 modId="themakkersmod" #mandatory
-version="2.0.0.PLAYTEST" #mandatory
+version="2.0.0" #mandatory
 displayName="The Makkers Mod" #mandatory
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
@@ -28,3 +28,9 @@ A mod about "De Makkers"
     versionRange="[1.19.4,1.20)"
     ordering="NONE"
     side="BOTH"
+[[dependencies.themakkersmod]]
+modId="citadel"
+mandatory=true
+versionRange="[2.3.4,)"
+ordering="AFTER"
+side="BOTH"

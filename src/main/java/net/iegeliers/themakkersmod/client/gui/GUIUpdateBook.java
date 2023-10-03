@@ -22,7 +22,7 @@ public class GUIUpdateBook extends GuiBasicBook {
     }
 
     protected int getBindingColor() {
-        return 0X606B26;
+        return 0XAA5C25;
     }
 
     public ResourceLocation getRootPage() {

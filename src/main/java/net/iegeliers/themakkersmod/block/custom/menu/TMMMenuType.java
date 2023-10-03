@@ -1,4 +1,4 @@
-package net.iegeliers.themakkersmod.block.custom.entity;
+package net.iegeliers.themakkersmod.block.custom.menu;
 
 import net.iegeliers.themakkersmod.TheMakkersMod;
 import net.iegeliers.themakkersmod.block.custom.menu.MenuKnakworstOven;
@@ -25,5 +25,4 @@ public class TMMMenuType {
     public static void register(IEventBus eventBus) {
         MENUS.register(eventBus);
     }
-
 }

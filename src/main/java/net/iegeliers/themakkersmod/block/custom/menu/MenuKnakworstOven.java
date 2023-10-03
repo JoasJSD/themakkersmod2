@@ -1,6 +1,5 @@
 package net.iegeliers.themakkersmod.block.custom.menu;
 
-import net.iegeliers.themakkersmod.block.custom.entity.TMMMenuType;
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.*;
