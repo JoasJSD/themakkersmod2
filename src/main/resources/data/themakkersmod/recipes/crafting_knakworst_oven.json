@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "111",
+    "121",
+    "000"
+  ],
+  "key": {
+    "0": {
+      "item": "themakkersmod:block_of_knakworst"
+    },
+    "1": {
+      "item": "minecraft:bricks"
+    },
+    "2": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "item": "themakkersmod:knakworst_oven",
+    "count": 1
+  }
+}

@@ -1,0 +1,1 @@
+give @s chest{BlockEntityTag:{LootTable:"themakkersmod:chests/knakworst_store"}}

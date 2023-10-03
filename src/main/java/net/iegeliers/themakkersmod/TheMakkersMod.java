@@ -2,15 +2,21 @@ package net.iegeliers.themakkersmod;
 
 import com.mojang.logging.LogUtils;
 import net.iegeliers.themakkersmod.block.TMMBlocks;
+import net.iegeliers.themakkersmod.block.custom.entity.TMMBlockEntity;
+import net.iegeliers.themakkersmod.block.custom.entity.TMMMenuType;
+import net.iegeliers.themakkersmod.block.custom.screen.ScreenKnakworstOven;
 import net.iegeliers.themakkersmod.item.TMMItems;
 import net.iegeliers.themakkersmod.misc.TMMCreativeModeTabs;
 import net.iegeliers.themakkersmod.sound.TMMSounds;
+import net.iegeliers.themakkersmod.villager.TMMVillagers;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -23,6 +29,7 @@ public class TheMakkersMod
 {
     public static final String MODID = "themakkersmod";
     private static final Logger LOGGER = LogUtils.getLogger();
+    public static final CommonProxy PROXY = DistExecutor.runForDist(() -> ClientProxy::new, () -> CommonProxy::new);
 
     public TheMakkersMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -33,10 +40,14 @@ public class TheMakkersMod
 
         TMMItems.register(modEventBus);
         TMMBlocks.register(modEventBus);
+        TMMMenuType.register(modEventBus);
+        TMMBlockEntity.register(modEventBus);
+        TMMVillagers.register(modEventBus);
         TMMSounds.SOUNDEVENT.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(TMMVillagers::registerPOIs);
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
@@ -50,8 +61,11 @@ public class TheMakkersMod
             event.accept(TMMItems.CAN_OPENER);
             event.accept(TMMItems.CAN_OF_KNAKWORST);
             event.accept(TMMItems.MUSIC_DISC_DON);
+            event.accept(TMMItems.UPDATE_BOOK);
             // Blocks
             event.accept(TMMBlocks.BLOCK_OF_KNAKWORST);
+            event.accept(TMMBlocks.KNAKWORST_OVEN);
+            event.accept(TMMBlocks.MOOS_STATUE);
         }
     }
 
@@ -66,6 +80,7 @@ public class TheMakkersMod
     {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            MenuScreens.register(TMMMenuType.KNAKWORST_OVEN_MENU.get(), ScreenKnakworstOven::new);
         }
     }
 }

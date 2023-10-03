@@ -1,0 +1,18 @@
+{
+  "parent": "full_releases.json",
+  "text": "update200.txt",
+  "title": "book.themakkersmod.update_book.update200.title",
+  "title_locale": "book.dictionary.update200",
+  "linked_page_buttons": [
+  ],
+  "item_renders": [
+  ],
+  "recipes": [
+  ],
+  "tabula_renders": [
+  ],
+  "entity_renders": [
+  ],
+  "entity_buttons": [
+  ]
+}

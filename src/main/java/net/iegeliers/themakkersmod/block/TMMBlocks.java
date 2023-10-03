@@ -1,7 +1,8 @@
 package net.iegeliers.themakkersmod.block;
 
 import net.iegeliers.themakkersmod.TheMakkersMod;
-import net.iegeliers.themakkersmod.block.custom.KnakworstOven;
+import net.iegeliers.themakkersmod.block.custom.BlockKnakworstOven;
+import net.iegeliers.themakkersmod.block.custom.BlockMoosStatue;
 import net.iegeliers.themakkersmod.item.TMMItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -22,18 +23,19 @@ public class TMMBlocks{
 
 
     // Blocks
-    public static final RegistryObject<Block> MOOS_STATUE = registerBlock("moos_statue",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.0F, 3.0F)
-                    .sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> BLOCK_OF_KNAKWORST = registerBlock("block_of_knakworst",
             () -> new Block(BlockBehaviour.Properties.of(Material.CLAY).strength(1.0F, 1.5F)
                     .sound(SoundType.SLIME_BLOCK)));
 
     public static final RegistryObject<Block> KNAKWORST_OVEN = registerBlock("knakworst_oven",
-            () -> new KnakworstOven(BlockBehaviour.Properties.of(Material.STONE).strength(1.0F, 1.5F)
+            () -> new BlockKnakworstOven(BlockBehaviour.Properties.of(Material.STONE).strength(1.0F, 1.5F)
                     .sound(SoundType.STONE).randomTicks()));
 
+    // Models
+    public static final RegistryObject<Block> MOOS_STATUE = registerBlock("moos_statue",
+            () -> new BlockMoosStatue(BlockBehaviour.Properties.of(Material.STONE).strength(2.0F, 3.0F)
+                    .sound(SoundType.STONE)));
 
 
     // Block registry object

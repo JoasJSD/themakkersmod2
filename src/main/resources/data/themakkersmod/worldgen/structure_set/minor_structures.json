@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "themakkersmod:knakworst_store",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"salt": 63249269,
+		"spacing": 40,
+		"separation": 30,
+		"type": "minecraft:random_spread"
+	}
+}

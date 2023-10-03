@@ -1,0 +1,16 @@
+{
+  "parent": "",
+  "text": "root.txt",
+  "title": "book.themakkersmod.update_book.root.title",
+  "title_locale": "book.update_book.root",
+  "linked_page_buttons": [
+    {
+      "linked_page": "full_releases.json",
+      "text": "Full Releases",
+      "x": 290,
+      "y": 20,
+      "page": 0,
+      "item": "themakkersmod:knakworst"
+    }
+  ]
+}

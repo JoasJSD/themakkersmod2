@@ -1,0 +1,16 @@
+{
+  "parent": "root.json",
+  "text": "full_releases.txt",
+  "title": "book.themakkersmod.update_book.full_releases.title",
+  "title_locale": "book.update_book.beta_updates",
+  "linked_page_buttons": [
+    {
+      "linked_page": "update200.json",
+      "text": "Version 2.0.0",
+      "x": 290,
+      "y": 20,
+      "page": 0,
+      "item": "themakkersmod:knakworst"
+    }
+  ]
+}

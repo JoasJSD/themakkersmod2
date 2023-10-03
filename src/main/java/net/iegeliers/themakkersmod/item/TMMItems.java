@@ -2,6 +2,7 @@ package net.iegeliers.themakkersmod.item;
 
 import net.iegeliers.themakkersmod.TheMakkersMod;
 import net.iegeliers.themakkersmod.item.custom.ItemMicrophone;
+import net.iegeliers.themakkersmod.item.custom.ItemUpdateBook;
 import net.iegeliers.themakkersmod.sound.TMMSounds;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -38,6 +39,10 @@ public class TMMItems {
     // Music Disks
     public static final RegistryObject<Item> MUSIC_DISC_DON = ITEMS.register("music_disc_don",
             () -> new RecordItem(8, TMMSounds.MUSIC_DISC_DON, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 1160));
+
+    // Dictionaries
+    public static final RegistryObject<Item> UPDATE_BOOK = ITEMS.register("update_book",
+            () -> new ItemUpdateBook(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

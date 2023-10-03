@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " 00",
+    "010",
+    "0 0"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:stone"
+    },
+    "1": {
+      "item": "themakkersmod:knakworst"
+    }
+  },
+  "result": {
+    "item": "themakkersmod:moos_statue",
+    "count": 1
+  }
+}

@@ -1,0 +1,2 @@
+tellraw @a ["",{"translate":"message.themakkersmod.join.welcome","bold":true,"color":"aqua"},{"translate":"message.themakkersmod.join.thanks"},{"text":"2.0.0 ","color":"#FFAE00"},{"translate":"message.themakkersmod.join.end"}]
+give @e[type=player] themakkersmod:update_book
