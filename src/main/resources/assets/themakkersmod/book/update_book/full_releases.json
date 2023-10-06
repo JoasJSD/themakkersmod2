@@ -11,6 +11,14 @@
       "y": 20,
       "page": 0,
       "item": "themakkersmod:knakworst"
+    },
+    {
+      "linked_page": "update201.json",
+      "text": "Version 2.0.1",
+      "x": 290,
+      "y": 40,
+      "page": 0,
+      "item": "themakkersmod:can_of_knakworst"
     }
   ]
 }

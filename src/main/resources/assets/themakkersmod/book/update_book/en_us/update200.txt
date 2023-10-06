@@ -2,4 +2,4 @@ Update 2.0.0 is the Port update! Nothing really changed,
 all that changed is that we moved on from MCreator.
 From now on, we'll code the mod by ourselves, using IntelliJ!
 <NEWLINE>
-Changes that are made: The Knakworst Store's appearance has changed!
+Changes that are made: The Knakworst Store's appearance has    changed!

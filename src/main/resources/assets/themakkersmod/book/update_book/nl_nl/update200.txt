@@ -2,4 +2,4 @@ Update 2.0.0 is de 'port update'! Er is niet veel veranderd,
 alles dat is veranderd is dat we MCreator hebben achtergelaten!
 Vanaf nu zullen we de mod updaten via IntelliJ!
 <NEWLINE>
-Andere veranderingen: De Knakworst Winkel's uiterlijk is veranderd!
+Andere veranderingen: De Knakworst Winkel's uiterlijk is      veranderd!

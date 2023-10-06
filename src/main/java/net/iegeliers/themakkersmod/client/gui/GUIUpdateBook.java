@@ -16,13 +16,8 @@ public class GUIUpdateBook extends GuiBasicBook {
         super(bookStack, Component.translatable("book.themakkersmod.update_book.root.title"));
     }
 
-    public GUIUpdateBook(ItemStack bookStack, String page) {
-        super(bookStack, Component.translatable("book.themakkersmod.update_book.root.title"));
-        this.currentPageJSON = new ResourceLocation(this.getTextFileDirectory() + page + ".json");
-    }
-
     protected int getBindingColor() {
-        return 0XAA5C25;
+        return 0X670606;
     }
 
     public ResourceLocation getRootPage() {

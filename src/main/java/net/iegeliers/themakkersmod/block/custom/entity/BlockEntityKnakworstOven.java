@@ -14,7 +14,7 @@ import org.jetbrains.annotations.NotNull;
 public class BlockEntityKnakworstOven extends AbstractFurnaceBlockEntity {
 
     public BlockEntityKnakworstOven(BlockPos blockPos, BlockState blockState) {
-        super(TMMBlockEntity.KNAKWORST_OVEN.get(), blockPos, blockState, RecipeType.SMELTING);
+        super(TMMBlockEntity.KNAKWORST_OVEN.get(), blockPos, blockState, RecipeType.SMOKING);
     }
 
     protected @NotNull Component getDefaultName() {

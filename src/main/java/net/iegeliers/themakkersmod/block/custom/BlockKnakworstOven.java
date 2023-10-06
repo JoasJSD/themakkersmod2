@@ -40,7 +40,7 @@ public class BlockKnakworstOven extends AbstractFurnaceBlock {
         BlockEntity blockentity = level.getBlockEntity(blockPos);
         if (blockentity instanceof BlockEntityKnakworstOven) {
             player.openMenu((MenuProvider) blockentity);
-            player.awardStat(Stats.INTERACT_WITH_FURNACE);
+            player.awardStat(Stats.INTERACT_WITH_SMOKER);
         }
     }
 
