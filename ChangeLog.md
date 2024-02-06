@@ -1,4 +1,7 @@
 # ChangeLog
+## Version 2.0.2
+Release page:
+<br/>**Achievement Update**<br/>
 ## Version 2.0.1
 Release page: https://modrinth.com/mod/themakkersmod/version/2.0.1
 <br/>**Just some simple fixes!**<br/>

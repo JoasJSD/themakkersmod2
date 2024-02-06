@@ -1,7 +1,6 @@
 package net.iegeliers.themakkersmod.block.custom.menu;
 
 import net.iegeliers.themakkersmod.TheMakkersMod;
-import net.iegeliers.themakkersmod.block.custom.menu.MenuKnakworstOven;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;

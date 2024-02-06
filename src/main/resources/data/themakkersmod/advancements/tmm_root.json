@@ -1,0 +1,31 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancements.themakkersmod.root.title",
+      "color": "gold",
+      "bold": false
+    },
+    "description": {
+      "translate": "advancements.themakkersmod.root.description",
+      "color": "white"
+    },
+    "icon": {
+      "item": "themakkersmod:knakworst"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "themakkersmod:textures/block/block_of_knakworst.png"
+  },
+  "criteria": {
+    "TMM": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "requirements": [
+    [
+      "TMM"
+    ]
+  ]
+}

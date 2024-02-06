@@ -1,4 +1,10 @@
 {
+  "advancements.themakkersmod.root.title": "The Makkers Mod",
+  "advancements.themakkersmod.root.description": "You're ready for this?",
+  "advancements.themakkersmod.eat_knakworst.title": "KNAKWORST?!?!?",
+  "advancements.themakkersmod.eat_knakworst.description": "Eat knakworst for the first time?",
+
+
   "block.themakkersmod.block_of_knakworst": "Block of Knakworst",
   "block.themakkersmod.knakworst_oven": "Knakworst Oven",
   "block.themakkersmod.moos_statue": "Moos Statue",

@@ -27,6 +27,8 @@ public class TMMItems {
     // Normal Items
     public static final RegistryObject<Item> MICROPHONE = ITEMS.register("microphone",
             () -> new ItemMicrophone((new Item.Properties()).stacksTo(1).food(TMMEdibleItems.MICROPHONE)));
+    public static final RegistryObject<Item> CAT_FOOD = ITEMS.register("cat_food",
+            () -> new Item((new Item.Properties()).stacksTo(1).food(TMMEdibleItems.CAT_FOOD)));
     public static final RegistryObject<Item> EATEN_MICROPHONE = ITEMS.register("eaten_microphone",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CAN_OF_KNAKWORST = ITEMS.register("can_of_knakworst",

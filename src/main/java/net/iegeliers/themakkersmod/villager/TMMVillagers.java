@@ -23,10 +23,17 @@ public class TMMVillagers {
     public static final RegistryObject<PoiType> KNAKWORST_OVEN_POI = POI_TYPES.register("knakworst_oven_poi",
             () -> new PoiType(ImmutableSet.copyOf(TMMBlocks.KNAKWORST_OVEN.get().getStateDefinition().getPossibleStates()),
                     1, 1));
+    public static final RegistryObject<PoiType> SALESMAN_BLOCK_POI = POI_TYPES.register("salesman_block_poi",
+            () -> new PoiType(ImmutableSet.copyOf(TMMBlocks.SALESMAN_BLOCK.get().getStateDefinition().getPossibleStates()),
+                    1, 1));
 
     public static final RegistryObject<VillagerProfession> KNAKWORST_BUTCHER = VILLAGER_PROFESSIONS.register("knakworst_butcher",
             () -> new VillagerProfession("knakworst_butcher", x -> x.get() == KNAKWORST_OVEN_POI.get(),
                     x -> x.get() == KNAKWORST_OVEN_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
+                    SoundEvents.VILLAGER_WORK_BUTCHER));
+    public static final RegistryObject<VillagerProfession> MAKKERS_SALESMAN = VILLAGER_PROFESSIONS.register("makkers_salesman",
+            () -> new VillagerProfession("makkers_salesman", x -> x.get() == SALESMAN_BLOCK_POI.get(),
+                    x -> x.get() == SALESMAN_BLOCK_POI.get(), ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.VILLAGER_WORK_BUTCHER));
 
 
@@ -34,6 +41,12 @@ public class TMMVillagers {
         try {
             ObfuscationReflectionHelper.findMethod(PoiType.class,
                     "registerBlockStates", PoiType.class).invoke(null, KNAKWORST_OVEN_POI.get());
+        } catch (InvocationTargetException | IllegalAccessException exception) {
+            exception.printStackTrace();
+        }
+        try {
+            ObfuscationReflectionHelper.findMethod(PoiType.class,
+                    "registerBlockStates", PoiType.class).invoke(null, SALESMAN_BLOCK_POI.get());
         } catch (InvocationTargetException | IllegalAccessException exception) {
             exception.printStackTrace();
         }

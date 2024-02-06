@@ -28,7 +28,6 @@ import org.slf4j.Logger;
 public class TheMakkersMod
 {
     public static final String MODID = "themakkersmod";
-    private static final Logger LOGGER = LogUtils.getLogger();
     public static final CommonProxy PROXY = DistExecutor.runForDist(() -> ClientProxy::new, () -> CommonProxy::new);
 
     public TheMakkersMod() {
@@ -36,7 +35,6 @@ public class TheMakkersMod
         MinecraftForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::commonSetup);
-        modEventBus.addListener(this::addCreative);
 
         TMMItems.register(modEventBus);
         TMMBlocks.register(modEventBus);
@@ -48,25 +46,6 @@ public class TheMakkersMod
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(TMMVillagers::registerPOIs);
-    }
-
-    private void addCreative(CreativeModeTabEvent.BuildContents event) {
-        if(event.getTab() == TMMCreativeModeTabs.TMM_TAB) {
-            // Items
-            event.accept(TMMItems.KNAKWORST);
-            event.accept(TMMItems.HOT_KNAKWORST);
-            event.accept(TMMItems.BREAD_WITH_KNAKWORST);
-            event.accept(TMMItems.MICROPHONE);
-            event.accept(TMMItems.EATEN_MICROPHONE);
-            event.accept(TMMItems.CAN_OPENER);
-            event.accept(TMMItems.CAN_OF_KNAKWORST);
-            event.accept(TMMItems.MUSIC_DISC_DON);
-            event.accept(TMMItems.UPDATE_BOOK);
-            // Blocks
-            event.accept(TMMBlocks.BLOCK_OF_KNAKWORST);
-            event.accept(TMMBlocks.KNAKWORST_OVEN);
-            event.accept(TMMBlocks.MOOS_STATUE);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

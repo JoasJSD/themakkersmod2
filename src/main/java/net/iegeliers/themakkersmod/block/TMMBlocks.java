@@ -20,7 +20,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Supplier;
 import java.util.function.ToIntFunction;
 
-public class TMMBlocks{
+public class TMMBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, TheMakkersMod.MODID);
 
@@ -34,6 +34,11 @@ public class TMMBlocks{
     public static final RegistryObject<Block> KNAKWORST_OVEN = registerBlock("knakworst_oven",
             () -> new BlockKnakworstOven(BlockBehaviour.Properties.of(Material.STONE).strength(3.0F, 1.5F)
                     .sound(SoundType.STONE).randomTicks().requiresCorrectToolForDrops().lightLevel(litBlockEmission(13))));
+
+    // Villagers job site blocks
+    public static final RegistryObject<Block> SALESMAN_BLOCK = registerBlock("salesman_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD).strength(2.0F, 1.5F)
+                    .sound(SoundType.WOOD)));
 
     // Models
     public static final RegistryObject<Block> MOOS_STATUE = registerBlock("moos_statue",

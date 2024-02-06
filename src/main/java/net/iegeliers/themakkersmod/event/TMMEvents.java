@@ -57,5 +57,17 @@ public class TMMEvents {
                     stack5, 2, 15, 0.02F));
             // stack5, 10, 8, 0.02F)); = 10 = max uses, 8 = xp to villager, 0.02F = price multiplier.
         }
+
+
+        if (event.getType() == TMMVillagers.MAKKERS_SALESMAN.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack1 = new ItemStack(TMMItems.CAT_FOOD.get(), 1);
+            int villagerLevel1 = 1;
+
+            // Level 1 trades
+            trades.get(villagerLevel1).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 5),
+                    stack1, 10, 4, 0.03F));
+        }
     }
 }

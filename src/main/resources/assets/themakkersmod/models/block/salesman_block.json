@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "up": "themakkersmod:block/salesman_block_top",
+    "down": "themakkersmod:block/salesman_block_bottom",
+    "east": "themakkersmod:block/salesman_block_side",
+    "south": "themakkersmod:block/salesman_block_side",
+    "west": "themakkersmod:block/salesman_block_side",
+    "north": "themakkersmod:block/salesman_block_side",
+    "particle": "themakkersmod:block/salesman_block_side"
+  },
+  "render_type": "solid"
+}

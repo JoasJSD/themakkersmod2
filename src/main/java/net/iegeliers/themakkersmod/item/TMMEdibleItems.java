@@ -18,4 +18,6 @@ public class TMMEdibleItems {
     // "Food" hehe
     public static final FoodProperties MICROPHONE =
             (new FoodProperties.Builder()).nutrition(1).saturationMod(0.5F).build();
+    public static final FoodProperties CAT_FOOD =
+            (new FoodProperties.Builder()).nutrition(2).saturationMod(0.7F).build();
 }
